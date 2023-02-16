@@ -13,10 +13,16 @@ class PaginaSplash extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            Padding(
+              padding: EdgeInsets.only(top: 271, left: 81),
+            ),
             SizedBox(
               width: 250,
               height: 120.04,
               child: Image.asset('assets/bandera.png'),
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 20.96),
             ),
             Text(
               "Clubnouse",
