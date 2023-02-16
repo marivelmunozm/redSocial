@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(PaginaSplash());
@@ -11,13 +13,19 @@ class PaginaSplash extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Padding(
-              padding: EdgeInsets.only(left: 81, top: 271),
-            ),
             SizedBox(
               width: 250,
               height: 120.04,
               child: Image.asset('assets/bandera.png'),
+            ),
+            Text(
+              "Clubnouse",
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontStyle: FontStyle.normal,
+                color: Color(0xF000000),
+                fontSize: 48,
+              ),
             ),
           ],
         ),
