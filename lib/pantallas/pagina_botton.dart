@@ -18,15 +18,6 @@ class PaginaBotton extends StatelessWidget {
               ),
             ],
           ),
-          Row(
-            children: [
-              SizedBox(
-                width: 100,
-                height: 100,
-                child: Image.asset('assets/hombre.png A'),
-              ),
-            ],
-          )
         ],
       ),
     );
