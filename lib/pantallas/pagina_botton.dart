@@ -28,6 +28,7 @@ class PaginaBotton extends StatelessWidget {
                   Icons.share,
                   color: Color(0xFF395185),
                 ),
+                Icon(Icons.settings)
               ],
             ),
             Row(
