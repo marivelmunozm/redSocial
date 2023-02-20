@@ -79,6 +79,33 @@ class PaginaRoom extends StatelessWidget {
                   SizedBox(
                     height: 12,
                   ),
+                  Column(
+                    children: [
+                      Row(children: [
+                        Container(
+                          padding: EdgeInsets.all(3),
+                          width: 60,
+                          height: 60,
+                          child: CircleAvatar(
+                            radius: 50,
+                            backgroundImage: AssetImage("assets/circulo.png"),
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              width: 60,
+                              height: 60,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Image.asset("assets/circulo2.png"),
+                            ),
+                          ],
+                        ),
+                      ]),
+                    ],
+                  ),
                 ],
               ),
             ),
