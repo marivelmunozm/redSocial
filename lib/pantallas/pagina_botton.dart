@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:hola/pantallas/pagina_dashboard.dart';
 import 'package:hola/pantallas/pagina_room.dart';
 
 class PaginaBotton extends StatelessWidget {

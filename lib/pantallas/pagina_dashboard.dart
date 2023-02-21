@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class PaginaBotton extends StatelessWidget {
+class PaginaDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFF2DD),
+      backgroundColor: Color(0xFFFFF2DD),
       body: Column(
-        children: [Container()],
+        children: [],
       ),
     );
   }
