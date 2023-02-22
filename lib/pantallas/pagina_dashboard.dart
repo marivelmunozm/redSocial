@@ -39,7 +39,44 @@ class PaginaDashboard extends StatelessWidget {
                   child: Row(
                     children: [
                       crearTexto(texto: "News from around the"),
-                      crearIcono(),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 25),
+                        child: Container(
+                          width: 99,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Color(0xFFE8E5E5),
+                          ),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 8),
+                                child: crearIcono(),
+                              ),
+                              Text(
+                                "84",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 16,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                              crearIcono(),
+                              Text(
+                                "4",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 16,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -73,7 +110,7 @@ class PaginaDashboard extends StatelessWidget {
                               width: 45,
                               height: 45,
                               child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/circulo4.png"),
+                                backgroundImage: AssetImage("assets/1.png"),
                               ),
                             ),
                           ),
@@ -148,19 +185,56 @@ class PaginaDashboard extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 6,
+                  height: 18,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 27),
                   child: Row(
                     children: [
                       crearTexto(texto: "Lets' get you suit up"),
-                      crearIcono(),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 32),
+                        child: Container(
+                          width: 99,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Color(0xFFE8E5E5),
+                          ),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 8),
+                                child: crearIcono(),
+                              ),
+                              Text(
+                                "51",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 16,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                              crearIcono(),
+                              Text(
+                                "2",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 16,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 22,
                 ),
                 Row(
                   children: [
@@ -172,7 +246,7 @@ class PaginaDashboard extends StatelessWidget {
                             width: 45,
                             height: 45,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage("assets/circulo2.png"),
+                              backgroundImage: AssetImage("assets/2.png"),
                             ),
                           ),
                           Padding(
@@ -181,7 +255,7 @@ class PaginaDashboard extends StatelessWidget {
                               width: 45,
                               height: 45,
                               child: CircleAvatar(
-                                backgroundImage: AssetImage("assets/circulo4.png"),
+                                backgroundImage: AssetImage("assets/3.png"),
                               ),
                             ),
                           ),
@@ -201,7 +275,7 @@ class PaginaDashboard extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 4.74,
+                  height: 30.74,
                 )
               ],
             ),
@@ -228,19 +302,56 @@ class PaginaDashboard extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 6,
+                  height: 18,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 27),
                   child: Row(
                     children: [
                       crearTexto(texto: "Bring the spark back"),
-                      crearIcono(),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 44),
+                        child: Container(
+                          width: 99,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Color(0xFFE8E5E5),
+                          ),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 8),
+                                child: crearIcono(),
+                              ),
+                              Text(
+                                "51",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 16,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                              crearIcono(),
+                              Text(
+                                "2",
+                                style: TextStyle(
+                                    color: Color(0xFF6D6D6D),
+                                    fontSize: 16,
+                                    fontFamily: 'Poppins',
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 22,
                 ),
                 Row(
                   children: [
@@ -252,7 +363,7 @@ class PaginaDashboard extends StatelessWidget {
                             width: 45,
                             height: 45,
                             child: CircleAvatar(
-                              backgroundImage: AssetImage("assets/circulo2.png"),
+                              backgroundImage: AssetImage("assets/4.png"),
                             ),
                           ),
                         ],
@@ -270,8 +381,8 @@ class PaginaDashboard extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 4.74,
-                )
+                  height: 10,
+                ),
               ],
             ),
           ),
@@ -330,36 +441,9 @@ class PaginaDashboard extends StatelessWidget {
   }
 
   Widget crearIcono() {
-    return Container(
-      width: 99,
-      height: 20,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        color: Color(0xFFE8E5E5),
-      ),
-      child: Row(
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 8),
-            child: Icon(
-              Icons.person,
-              color: Color(0xFFC4C4C4),
-            ),
-          ),
-          Text(
-            "84",
-            style: TextStyle(color: Color(0xFF6D6D6D), fontSize: 16, fontFamily: 'Poppins', fontStyle: FontStyle.normal, fontWeight: FontWeight.w300),
-          ),
-          Icon(
-            Icons.person,
-            color: Color(0xFFC4C4C4),
-          ),
-          Text(
-            "4",
-            style: TextStyle(color: Color(0xFF6D6D6D), fontSize: 16, fontFamily: 'Poppins', fontStyle: FontStyle.normal, fontWeight: FontWeight.w300),
-          ),
-        ],
-      ),
+    return Icon(
+      Icons.person,
+      color: Color(0xFFC4C4C4),
     );
   }
 
