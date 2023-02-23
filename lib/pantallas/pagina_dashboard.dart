@@ -7,10 +7,68 @@ class PaginaDashboard extends StatelessWidget {
       backgroundColor: Color(0xFFFFF2DD),
       appBar: AppBar(
         backgroundColor: Color(0xFFFFFFFF),
+        title: Text(
+          "hey Josh",
+          style: TextStyle(color: Color(0xFF000000), fontFamily: 'Poppins', fontSize: 22, fontWeight: FontWeight.w400),
+        ),
+        actions: <Widget>[
+          Icon(
+            Icons.search,
+            color: Color(0xFF000000),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 17, left: 20, right: 20),
+            child: Stack(
+              children: [
+                Container(
+                  width: 23.73,
+                  height: 21.68,
+                  child: Image.asset("assets/carpeta.png"),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10.11, left: 11.1),
+                  child: Container(
+                    width: 13.24,
+                    height: 14.06,
+                    child: Image.asset("assets/x.png"),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: 23.73,
+            height: 21.68,
+            child: Image.asset("assets/maletin.png"),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 14.81),
+            child: Icon(
+              Icons.notifications,
+              color: Color(0xFF000000),
+            ),
+          ),
+        ],
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 15),
+          child: Container(
+            width: 45,
+            height: 45,
+            child: CircleAvatar(
+              backgroundImage: AssetImage("assets/hombre.png"),
+            ),
+          ),
+        ),
       ),
       body: Column(
         children: [
-          Card(
+          crearCard(),],
+      ),
+    );
+  }
+
+  Widget crearCard(){
+    return  Card(
             margin: EdgeInsets.only(top: 36, left: 25, right: 25),
             child: Column(
               children: [
@@ -63,7 +121,14 @@ class PaginaDashboard extends StatelessWidget {
                                     fontStyle: FontStyle.normal,
                                     fontWeight: FontWeight.w300),
                               ),
-                              crearIcono(),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 4, right: 5),
+                                child: Container(
+                                  width: 15,
+                                  height: 15,
+                                  child: Image.asset("assets/mensaje.png"),
+                                ),
+                              ),
                               Text(
                                 "4",
                                 style: TextStyle(
@@ -216,7 +281,14 @@ class PaginaDashboard extends StatelessWidget {
                                     fontStyle: FontStyle.normal,
                                     fontWeight: FontWeight.w300),
                               ),
-                              crearIcono(),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 4, right: 5),
+                                child: Container(
+                                  width: 15,
+                                  height: 15,
+                                  child: Image.asset("assets/mensaje.png"),
+                                ),
+                              ),
                               Text(
                                 "2",
                                 style: TextStyle(
@@ -333,7 +405,14 @@ class PaginaDashboard extends StatelessWidget {
                                     fontStyle: FontStyle.normal,
                                     fontWeight: FontWeight.w300),
                               ),
-                              crearIcono(),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 4, right: 5),
+                                child: Container(
+                                  width: 15,
+                                  height: 15,
+                                  child: Image.asset("assets/mensaje.png"),
+                                ),
+                              ),
                               Text(
                                 "2",
                                 style: TextStyle(
@@ -385,10 +464,8 @@ class PaginaDashboard extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-        ],
-      ),
-    );
+          );
+       
   }
 
   Widget crearTitulo({required String titulo}) {
