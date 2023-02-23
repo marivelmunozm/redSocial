@@ -62,13 +62,7 @@ class PaginaDashboard extends StatelessWidget {
       ),
       body: Column(
         children: [
-          crearCard(),],
-      ),
-    );
-  }
-
-  Widget crearCard(){
-    return  Card(
+          Card(
             margin: EdgeInsets.only(top: 36, left: 25, right: 25),
             child: Column(
               children: [
@@ -352,120 +346,151 @@ class PaginaDashboard extends StatelessWidget {
               ],
             ),
           ),
-          Card(
-            margin: EdgeInsets.only(top: 36, left: 25, right: 25),
-            child: Column(
-              children: [
-                Row(
+          Stack(
+            children: [
+              Card(
+                margin: EdgeInsets.only(top: 36, left: 25, right: 25),
+                child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 106),
-                      child: crearTitulo(titulo: "Mix it Up"),
-                    ),
-                    crearRedondedo(ancho: 109, color: Color(0xFFED43BD), nombre: "Relationship"),
-                  ],
-                ),
-                SizedBox(
-                  height: 1.98,
-                ),
-                Row(
-                  children: [
-                    crearLinea(),
-                  ],
-                ),
-                SizedBox(
-                  height: 18,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 27),
-                  child: Row(
-                    children: [
-                      crearTexto(texto: "Bring the spark back"),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 44),
-                        child: Container(
-                          width: 99,
-                          height: 20,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: Color(0xFFE8E5E5),
-                          ),
-                          child: Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 8),
-                                child: crearIcono(),
-                              ),
-                              Text(
-                                "51",
-                                style: TextStyle(
-                                    color: Color(0xFF6D6D6D),
-                                    fontSize: 16,
-                                    fontFamily: 'Poppins',
-                                    fontStyle: FontStyle.normal,
-                                    fontWeight: FontWeight.w300),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 4, right: 5),
-                                child: Container(
-                                  width: 15,
-                                  height: 15,
-                                  child: Image.asset("assets/mensaje.png"),
-                                ),
-                              ),
-                              Text(
-                                "2",
-                                style: TextStyle(
-                                    color: Color(0xFF6D6D6D),
-                                    fontSize: 16,
-                                    fontFamily: 'Poppins',
-                                    fontStyle: FontStyle.normal,
-                                    fontWeight: FontWeight.w300),
-                              ),
-                            ],
-                          ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 106),
+                          child: crearTitulo(titulo: "Mix it Up"),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 22,
-                ),
-                Row(
-                  children: [
+                        crearRedondedo(ancho: 109, color: Color(0xFFED43BD), nombre: "Relationship"),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 1.98,
+                    ),
+                    Row(
+                      children: [
+                        crearLinea(),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 18,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 25),
-                      child: Stack(
+                      padding: const EdgeInsets.only(left: 27),
+                      child: Row(
                         children: [
-                          Container(
-                            width: 45,
-                            height: 45,
-                            child: CircleAvatar(
-                              backgroundImage: AssetImage("assets/4.png"),
+                          crearTexto(texto: "Bring the spark back"),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 44),
+                            child: Container(
+                              width: 99,
+                              height: 20,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(15),
+                                color: Color(0xFFE8E5E5),
+                              ),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 8),
+                                    child: crearIcono(),
+                                  ),
+                                  Text(
+                                    "51",
+                                    style: TextStyle(
+                                        color: Color(0xFF6D6D6D),
+                                        fontSize: 16,
+                                        fontFamily: 'Poppins',
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 4, right: 5),
+                                    child: Container(
+                                      width: 15,
+                                      height: 15,
+                                      child: Image.asset("assets/mensaje.png"),
+                                    ),
+                                  ),
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                        color: Color(0xFF6D6D6D),
+                                        fontSize: 16,
+                                        fontFamily: 'Poppins',
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 102),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          crearListaNombre(nombre: "Sahil Khan"),
-                        ],
-                      ),
+                    SizedBox(
+                      height: 22,
+                    ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 25),
+                          child: Stack(
+                            children: [
+                              Container(
+                                width: 45,
+                                height: 45,
+                                child: CircleAvatar(
+                                  backgroundImage: AssetImage("assets/4.png"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 102, bottom: 23),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              crearListaNombre(nombre: "Sahil Khan"),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 172, left: 174),
+                child: Container(
+                  width: 187,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: Color(0xFFFFBF59),
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Icon(
+                        Icons.add,
+                        color: Color(0xFFFFFFFF),
+                      ),
+                      Text(
+                        "Start a room",
+                        style: TextStyle(
+                            color: Color(0xFFFFFFFF), fontSize: 20, fontFamily: 'Poppins', fontStyle: FontStyle.normal, fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  ),
                 ),
-              ],
-            ),
-          );
-       
+              ),
+            ],
+          )
+        ],
+      ),
+    );
   }
 
   Widget crearTitulo({required String titulo}) {
